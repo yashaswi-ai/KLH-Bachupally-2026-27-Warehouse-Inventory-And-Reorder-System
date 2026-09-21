@@ -13,8 +13,8 @@ A Java-based warehouse inventory management system that tracks products, monitor
 
 | Student ID |
 |---|
-| 2620080024 | - T.Yashaswi
-| 2620030378 | - Joshitha Sai Sahasra
+| 2620080024 |  T.Yashaswi |
+| 2620030378 |  Joshitha Sai Sahasra |
 
 ---
 
