@@ -11,10 +11,10 @@ A Java-based warehouse inventory management system that tracks products, monitor
 
 ### Team Members
 
-| Student ID |
-|---|
-| 2620080024 |  T.Yashaswi |
-| 2620030378 |  Joshitha Sai Sahasra |
+ | Name | Student ID |
+|---|---|
+| Name : T.Yashaswi | Your ID : 2620080024 |
+| Member 2 Name : Joshitha Sai Sahasra | Your ID: 2620030378|
 
 ---
 
