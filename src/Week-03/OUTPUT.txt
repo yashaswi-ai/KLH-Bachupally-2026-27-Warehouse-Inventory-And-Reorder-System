@@ -1,0 +1,63 @@
+WEEK 3 - TEST OUTPUTS
+=====================
+
+Test Case 1
+-----------
+Input:
+Product ID: 101
+Product Name: Laptop
+Quantity: 55
+Reorder Level: 100
+Category: 1
+
+Output:
+Stock Status: Reorder Required
+Action: Place a reorder request.
+Category: Electronics
+
+
+Test Case 2
+-----------
+Input:
+Product ID: 102
+Product Name: Mouse
+Quantity: 105
+Reorder Level: 100
+Category: 2
+
+Output:
+Stock Status: Low Stock
+Category: Furniture
+
+
+Test Case 3
+-----------
+Input:
+Product ID: 103
+Product Name: Keyboard
+Quantity: 0
+Reorder Level: 20
+Category: 3
+
+Output:
+Stock Status: Out of Stock
+Warning: Check inventory settings.
+Category: Stationery
+
+
+Test Case 4
+-----------
+Input:
+Product ID: 104
+Product Name: Monitor
+Quantity: 50
+Reorder Level: 10
+Category: 9
+
+Output:
+Stock Status: Stock Available
+Category: Unknown
+
+
+Result:
+All four test cases executed successfully.
