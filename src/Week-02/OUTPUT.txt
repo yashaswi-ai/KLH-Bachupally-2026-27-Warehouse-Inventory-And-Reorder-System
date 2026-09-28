@@ -1,0 +1,56 @@
+WEEK 2 - PROGRAM OUTPUT
+Warehouse Inventory and Reorder System
+
+
+Test Case 1
+
+Enter Product ID: 101
+Enter Product Name: Laptop
+Enter Quantity: 5
+Enter Unit Price: 50000
+
+---------- Inventory Receipt ----------
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Unit Price: Rs.50000.00
+Subtotal: Rs.250000.00
+Handling Fee (5%): Rs.12500.00
+Total Value: Rs.262500.00
+---------------------------------------
+
+
+Test Case 2
+
+Enter Product ID: 102
+Enter Product Name: Mouse
+Enter Quantity: 10
+Enter Unit Price: 800
+
+---------- Inventory Receipt ----------
+Product ID: 102
+Product Name: Mouse
+Quantity: 10
+Unit Price: Rs.800.00
+Subtotal: Rs.8000.00
+Handling Fee (5%): Rs.400.00
+Total Value: Rs.8400.00
+---------------------------------------
+
+
+Test Case 3
+
+Enter Product ID: 103
+Enter Product Name: Keyboard
+Enter Quantity: 1
+Enter Unit Price: 1200
+
+---------- Inventory Receipt ----------
+Product ID: 103
+Product Name: Keyboard
+Quantity: 1
+Unit Price: Rs.1200.00
+Subtotal: Rs.1200.00
+Handling Fee (5%): Rs.60.00
+Total Value: Rs.1260.00
+---------------------------------------
