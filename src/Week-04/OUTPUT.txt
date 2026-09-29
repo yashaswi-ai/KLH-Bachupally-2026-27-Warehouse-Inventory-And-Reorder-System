@@ -1,0 +1,63 @@
+WEEK 4 - TEST OUTPUTS
+=====================
+
+Test Case 1 - Stock Check
+-------------------------
+Input:
+Choice: 1
+Quantity: 50
+Reorder Level: 20
+
+Output:
+Stock Status: Stock Available
+
+
+Test Case 2 - Product Search
+----------------------------
+Input:
+Choice: 3
+Product ID: 103
+
+Output:
+Product ID found.
+
+
+Test Case 3 - Product Count
+---------------------------
+Input:
+Choice: 2
+Number of Products: 3
+
+Output:
+Product 1
+Product 2
+Product 3
+Total Products: 3
+
+
+Test Case 4 - For Loop
+----------------------
+Input:
+Choice: 4
+
+Output:
+Numbers from 1 to 5:
+1
+2
+3
+4
+5
+
+
+Test Case 5 - Exit
+------------------
+Input:
+Choice: 5
+
+Output:
+Exiting the system...
+
+
+Result:
+All Week 4 test cases executed successfully.
+The while, for, and for-each loops worked as expected.
