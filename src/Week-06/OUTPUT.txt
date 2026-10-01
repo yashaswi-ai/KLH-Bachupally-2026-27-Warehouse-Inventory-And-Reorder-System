@@ -1,0 +1,21 @@
+=================================
+   Warehouse Inventory - Week 6
+=================================
+
+---------- Product Inventory ----------
+Product ID: 101 | Quantity: 25
+Product ID: 102 | Quantity: 10
+Product ID: 103 | Quantity: 50
+Product ID: 104 | Quantity: 5
+Product ID: 105 | Quantity: 30
+
+Product 103 found with quantity: 50
+Maximum Stock Quantity: 50
+Minimum Stock Quantity: 5
+Low Stock Products: 2
+
+---------- Warehouse Table ----------
+10 20 30
+15 25 35
+5 10 15
+--------------------------------------
