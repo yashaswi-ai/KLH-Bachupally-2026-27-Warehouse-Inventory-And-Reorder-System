@@ -1,0 +1,40 @@
+WEEK 11 — COLLECTIONS FRAMEWORK
+
+Program: InventoryWeek11.java
+
+===== PROGRAM OUTPUT =====
+
+How many products do you want to add? 2
+
+Enter Product 1 details:
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Reorder Level: 10
+Price: 50000
+
+Enter Product 2 details:
+Product ID: 102
+Product Name: Mouse
+Quantity: 25
+Reorder Level: 5
+Price: 500
+
+===== INVENTORY REPORT =====
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Price: Rs. 50000.0
+Status: Reorder Required
+---------------------------
+Product ID: 102
+Product Name: Mouse
+Quantity: 25
+Price: Rs. 500.0
+Status: Stock Available
+---------------------------
+Total products: 2
+
+===== END OF OUTPUT =====
+
+Result: The program successfully stores and displays inventory products using an ArrayList and identifies products requiring reorder.
