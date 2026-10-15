@@ -1,0 +1,72 @@
+WEEK 9 - COLLECTIONS AND GENERICS
+=================================
+
+TEST CASE 1: MULTIPLE PRODUCTS AND SUCCESSFUL SEARCH
+---------------------------------------------------
+
+Input:
+Number of products: 2
+
+Product 1:
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Reorder Level: 10
+
+Product 2:
+Product ID: 102
+Product Name: Mouse
+Quantity: 25
+Reorder Level: 5
+
+Search Product ID: 101
+
+Output:
+===== All Inventory Products =====
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Reorder Level: 10
+Stock Status: Reorder Required
+------------------------------
+Product ID: 102
+Product Name: Mouse
+Quantity: 25
+Reorder Level: 5
+Stock Status: Stock Available
+------------------------------
+
+Product Found:
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Reorder Level: 10
+Stock Status: Reorder Required
+Inventory check completed.
+
+
+TEST CASE 2: PRODUCT NOT FOUND
+------------------------------
+
+Input:
+Number of products: 1
+
+Product ID: 201
+Product Name: Keyboard
+Quantity: 15
+Reorder Level: 5
+
+Search Product ID: 999
+
+Output:
+===== All Inventory Products =====
+Product ID: 201
+Product Name: Keyboard
+Quantity: 15
+Reorder Level: 5
+Stock Status: Stock Available
+------------------------------
+
+Enter Product ID to search: 999
+Product not found.
+Inventory check completed.
