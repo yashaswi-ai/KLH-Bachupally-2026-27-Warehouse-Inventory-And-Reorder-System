@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 // Custom exception
@@ -23,13 +22,12 @@ abstract class InventoryItem {
     protected int reorderLevel;
 
     public InventoryItem(int productId, String productName,
-                         int quantity, int reorderLevel)
+            int quantity, int reorderLevel)
             throws InvalidQuantityException {
 
         if (quantity < 0 || reorderLevel < 0) {
             throw new InvalidQuantityException(
-                "Quantity and reorder level cannot be negative."
-            );
+                    "Quantity and reorder level cannot be negative.");
         }
 
         this.productId = productId;
@@ -45,7 +43,7 @@ abstract class InventoryItem {
 class ProductItem extends InventoryItem implements Reorderable {
 
     public ProductItem(int productId, String productName,
-                       int quantity, int reorderLevel)
+            int quantity, int reorderLevel)
             throws InvalidQuantityException {
 
         super(productId, productName, quantity, reorderLevel);
@@ -63,9 +61,8 @@ class ProductItem extends InventoryItem implements Reorderable {
         System.out.println("Quantity: " + quantity);
         System.out.println("Reorder Level: " + reorderLevel);
         System.out.println(
-            "Stock Status: "
-            + (needsReorder() ? "Reorder Required" : "Stock Available")
-        );
+                "Stock Status: "
+                        + (needsReorder() ? "Reorder Required" : "Stock Available"));
     }
 }
 
@@ -92,20 +89,18 @@ public class InventoryWeek08 {
             System.out.print("Enter Reorder Level: ");
             int reorderLevel = Integer.parseInt(sc.nextLine());
 
-            InventoryItem item =
-                new ProductItem(id, name, quantity, reorderLevel);
+            InventoryItem item = new ProductItem(id, name, quantity, reorderLevel);
 
             System.out.println("\n---------- Inventory Details ----------");
             item.displayDetails();
 
             // Lambda expression using the interface
             Reorderable check = () -> item instanceof Reorderable
-                && ((Reorderable) item).needsReorder();
+                    && ((Reorderable) item).needsReorder();
 
             System.out.println(
-                "Lambda Reorder Check: "
-                + (check.needsReorder() ? "Yes" : "No")
-            );
+                    "Lambda Reorder Check: "
+                            + (check.needsReorder() ? "Yes" : "No"));
 
         } catch (NumberFormatException e) {
             System.out.println("Error: Please enter valid whole numbers.");
@@ -117,4 +112,3 @@ public class InventoryWeek08 {
         }
     }
 }
-

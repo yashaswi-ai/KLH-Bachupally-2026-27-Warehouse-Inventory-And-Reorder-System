@@ -1,7 +1,6 @@
 =================================
    Warehouse Inventory - Week 7
 =================================
-
 ---------- Product 1 ----------
 Warehouse: Main Warehouse
 Product ID: 101
@@ -9,7 +8,6 @@ Product Name: Laptop
 Quantity: 5
 Price: Rs.50000.0
 Total Product Value: Rs.250000.00
-
 ---------- Product 2 ----------
 Warehouse: Storage Warehouse
 Product ID: 102
@@ -17,7 +15,6 @@ Product Name: Mouse
 Quantity: 10
 Price: Rs.800.0
 Total Product Value: Rs.8000.00
-
 ---------- Updated Product 1 ----------
 Warehouse: Main Warehouse
 Product ID: 101

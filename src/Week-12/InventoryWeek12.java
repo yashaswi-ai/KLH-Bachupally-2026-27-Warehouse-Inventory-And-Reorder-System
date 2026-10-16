@@ -12,7 +12,7 @@ class InventoryProduct {
     double price;
 
     InventoryProduct(int productId, String productName,
-                     int quantity, int reorderLevel, double price) {
+            int quantity, int reorderLevel, double price) {
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
@@ -48,42 +48,37 @@ public class InventoryWeek12 {
             double price = Double.parseDouble(sc.nextLine());
 
             if (id <= 0 || quantity < 0 ||
-                reorderLevel < 0 || price < 0 || name.isBlank()) {
+                    reorderLevel < 0 || price < 0 || name.isBlank()) {
                 System.out.println("Invalid details. Try again.");
                 i--;
                 continue;
             }
 
             inventory.add(new InventoryProduct(
-                id, name, quantity, reorderLevel, price
-            ));
+                    id, name, quantity, reorderLevel, price));
         }
 
         System.out.println("\n===== INVENTORY DATA PIPELINE =====");
 
         List<InventoryProduct> reorderItems = inventory.stream()
-            .filter(p -> p.quantity <= p.reorderLevel)
-            .collect(Collectors.toList());
+                .filter(p -> p.quantity <= p.reorderLevel)
+                .collect(Collectors.toList());
 
         System.out.println("\nProducts Requiring Reorder:");
-        reorderItems.forEach(p ->
-            System.out.println(p.productName + " - Quantity: " + p.quantity)
-        );
+        reorderItems.forEach(p -> System.out.println(p.productName + " - Quantity: " + p.quantity));
 
         double totalValue = inventory.stream()
-            .mapToDouble(p -> p.quantity * p.price)
-            .sum();
+                .mapToDouble(p -> p.quantity * p.price)
+                .sum();
 
         System.out.printf("\nTotal Inventory Value: Rs. %.2f%n", totalValue);
 
         List<InventoryProduct> sortedInventory = inventory.stream()
-            .sorted((a, b) -> Integer.compare(a.quantity, b.quantity))
-            .collect(Collectors.toList());
+                .sorted((a, b) -> Integer.compare(a.quantity, b.quantity))
+                .collect(Collectors.toList());
 
         System.out.println("\nProducts Sorted by Quantity:");
-        sortedInventory.forEach(p ->
-            System.out.println(p.productName + " - Quantity: " + p.quantity)
-        );
+        sortedInventory.forEach(p -> System.out.println(p.productName + " - Quantity: " + p.quantity));
 
         System.out.println("\nTotal Products: " + inventory.size());
         System.out.println("Products Requiring Reorder: " + reorderItems.size());
@@ -91,4 +86,3 @@ public class InventoryWeek12 {
         sc.close();
     }
 }
-

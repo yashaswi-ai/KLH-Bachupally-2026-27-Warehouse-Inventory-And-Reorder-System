@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -23,7 +22,7 @@ class Product {
     int reorderLevel;
 
     public Product(int productId, String productName,
-                   int quantity, int reorderLevel) {
+            int quantity, int reorderLevel) {
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
@@ -75,15 +74,13 @@ public class InventoryWeek09 {
 
                 if (quantity < 0 || reorderLevel < 0) {
                     System.out.println(
-                        "Quantity and reorder level cannot be negative."
-                    );
+                            "Quantity and reorder level cannot be negative.");
                     i--;
                     continue;
                 }
 
                 inventory.addItem(
-                    new Product(id, name, quantity, reorderLevel)
-                );
+                        new Product(id, name, quantity, reorderLevel));
             }
 
             System.out.println("\n===== All Inventory Products =====");

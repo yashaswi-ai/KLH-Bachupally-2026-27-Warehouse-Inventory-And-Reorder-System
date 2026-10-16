@@ -1,4 +1,3 @@
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -10,7 +9,7 @@ class InventoryProduct {
     int reorderLevel;
 
     public InventoryProduct(int productId, String productName,
-                            int quantity, int reorderLevel) {
+            int quantity, int reorderLevel) {
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
@@ -77,20 +76,17 @@ public class InventoryWeek10 {
 
                 if (id <= 0 || quantity < 0 || reorderLevel < 0) {
                     System.out.println(
-                        "ID must be positive; quantity and reorder level cannot be negative."
-                    );
+                            "ID must be positive; quantity and reorder level cannot be negative.");
                     i--;
                     continue;
                 }
 
                 products.add(
-                    new InventoryProduct(id, name, quantity, reorderLevel)
-                );
+                        new InventoryProduct(id, name, quantity, reorderLevel));
             }
 
             // Save products to a file
-            try (BufferedWriter writer =
-                     new BufferedWriter(new FileWriter(FILE_NAME))) {
+            try (BufferedWriter writer = new BufferedWriter(new FileWriter(FILE_NAME))) {
                 for (InventoryProduct product : products) {
                     writer.write(product.toFileFormat());
                     writer.newLine();
@@ -102,8 +98,7 @@ public class InventoryWeek10 {
             // Read products from the file
             System.out.println("\n===== Saved Inventory =====");
 
-            try (BufferedReader reader =
-                     new BufferedReader(new FileReader(FILE_NAME))) {
+            try (BufferedReader reader = new BufferedReader(new FileReader(FILE_NAME))) {
                 String line;
 
                 while ((line = reader.readLine()) != null) {
@@ -115,13 +110,11 @@ public class InventoryWeek10 {
                     }
 
                     try {
-                        InventoryProduct product =
-                            new InventoryProduct(
+                        InventoryProduct product = new InventoryProduct(
                                 Integer.parseInt(details[0]),
                                 details[1],
                                 Integer.parseInt(details[2]),
-                                Integer.parseInt(details[3])
-                            );
+                                Integer.parseInt(details[3]));
 
                         product.displayDetails();
                         System.out.println("------------------------------");

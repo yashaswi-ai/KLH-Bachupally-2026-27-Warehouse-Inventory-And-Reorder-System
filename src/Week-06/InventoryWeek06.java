@@ -7,8 +7,8 @@ public class InventoryWeek06 {
         System.out.println("=================================");
 
         // 1-D arrays
-        int[] productIds = {101, 102, 103, 104, 105};
-        int[] quantities = {25, 10, 50, 5, 30};
+        int[] productIds = { 101, 102, 103, 104, 105 };
+        int[] quantities = { 25, 10, 50, 5, 30 };
 
         System.out.println("\n---------- Product Inventory ----------");
 
@@ -16,9 +16,8 @@ public class InventoryWeek06 {
         for (int i = 0; i < productIds.length; i++) {
 
             System.out.println(
-                "Product ID: " + productIds[i]
-                + " | Quantity: " + quantities[i]
-            );
+                    "Product ID: " + productIds[i]
+                            + " | Quantity: " + quantities[i]);
         }
 
         // Search for a product
@@ -30,10 +29,9 @@ public class InventoryWeek06 {
             if (productIds[i] == searchId) {
 
                 System.out.println(
-                    "\nProduct " + searchId
-                    + " found with quantity: "
-                    + quantities[i]
-                );
+                        "\nProduct " + searchId
+                                + " found with quantity: "
+                                + quantities[i]);
 
                 found = true;
                 break;
@@ -55,8 +53,7 @@ public class InventoryWeek06 {
         }
 
         System.out.println(
-            "Maximum Stock Quantity: " + maximum
-        );
+                "Maximum Stock Quantity: " + maximum);
 
         // Find minimum quantity
         int minimum = quantities[0];
@@ -69,8 +66,7 @@ public class InventoryWeek06 {
         }
 
         System.out.println(
-            "Minimum Stock Quantity: " + minimum
-        );
+                "Minimum Stock Quantity: " + minimum);
 
         // Count low-stock products
         int lowStockCount = 0;
@@ -84,27 +80,23 @@ public class InventoryWeek06 {
         }
 
         System.out.println(
-            "Low Stock Products: " + lowStockCount
-        );
+                "Low Stock Products: " + lowStockCount);
 
         // 2-D array representing warehouse sections
         int[][] warehouse = {
-            {10, 20, 30},
-            {15, 25, 35},
-            {5, 10, 15}
+                { 10, 20, 30 },
+                { 15, 25, 35 },
+                { 5, 10, 15 }
         };
 
         System.out.println("\n---------- Warehouse Table ----------");
 
         for (int row = 0; row < warehouse.length; row++) {
 
-            for (int column = 0;
-                 column < warehouse[row].length;
-                 column++) {
+            for (int column = 0; column < warehouse[row].length; column++) {
 
                 System.out.print(
-                    warehouse[row][column] + " "
-                );
+                        warehouse[row][column] + " ");
             }
 
             System.out.println();

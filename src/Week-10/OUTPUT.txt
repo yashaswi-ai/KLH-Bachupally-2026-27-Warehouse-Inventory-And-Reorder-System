@@ -1,27 +1,21 @@
 WEEK 10 - FILE HANDLING AND DATA PERSISTENCE
 ============================================
-
 TEST CASE 1: SAVE AND READ INVENTORY PRODUCTS
 ---------------------------------------------
-
 Input:
 Number of products: 2
-
 Product 1:
 Product ID: 101
 Product Name: Laptop
 Quantity: 5
 Reorder Level: 10
-
 Product 2:
 Product ID: 102
 Product Name: Mouse
 Quantity: 25
 Reorder Level: 5
-
 Program Output:
 Products saved successfully.
-
 ===== Saved Inventory =====
 Product ID: 101
 Product Name: Laptop
@@ -36,17 +30,12 @@ Reorder Level: 5
 Stock Status: Stock Available
 ------------------------------
 Inventory check completed.
-
-
 TEST CASE 2: VERIFY SAVED FILE
 ------------------------------
-
 Command:
 Get-Content data\inventory.txt
-
 Actual File Contents:
 101,Laptop,5,10
 102,Mouse,25,5
-
 Result:
 Both product records were saved successfully in the file.

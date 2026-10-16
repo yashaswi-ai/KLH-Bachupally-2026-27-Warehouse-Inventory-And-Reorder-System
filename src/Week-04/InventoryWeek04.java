@@ -49,15 +49,14 @@ public class InventoryWeek04 {
                 }
 
                 System.out.println(
-                    "Total Products: " + numberOfProducts
-                );
+                        "Total Products: " + numberOfProducts);
 
             } else if (choice == 3) {
 
                 System.out.print("Enter Product ID to search: ");
                 int searchId = sc.nextInt();
 
-                int[] productIds = {101, 102, 103, 104, 105};
+                int[] productIds = { 101, 102, 103, 104, 105 };
 
                 boolean found = false;
 

@@ -8,8 +8,7 @@ class Product {
 
     // Constructor
     public Product(int productId, String productName,
-                   int quantity, double price) {
-
+            int quantity, double price) {
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
@@ -37,15 +36,17 @@ class Product {
     public void setQuantity(int quantity) {
         if (quantity >= 0) {
             this.quantity = quantity;
+        } else {
+            System.out.println("Quantity cannot be negative.");
         }
     }
 
-    // Calculate product value
+    // Calculate total product value
     public double calculateValue() {
         return quantity * price;
     }
 
-    // Object representation
+    // Display product details
     @Override
     public String toString() {
         return "Product ID: " + productId
@@ -60,16 +61,18 @@ class Inventory {
     private String warehouseName;
     private Product product;
 
+    // Constructor
     public Inventory(String warehouseName, Product product) {
         this.warehouseName = warehouseName;
         this.product = product;
     }
 
+    // Display inventory details
     public void displayInventory() {
         System.out.println("Warehouse: " + warehouseName);
         System.out.println(product);
         System.out.printf("Total Product Value: Rs.%.2f%n",
-                          product.calculateValue());
+                product.calculateValue());
     }
 }
 
@@ -81,25 +84,29 @@ public class InventoryWeek07 {
         System.out.println("   Warehouse Inventory - Week 7");
         System.out.println("=================================");
 
-        Product product1 = new Product(101, "Laptop", 5, 50000);
-        Product product2 = new Product(102, "Mouse", 10, 800);
+        // Create products
+        Product product1 = new Product(101, "Laptop", 5, 50000.0);
 
-        Inventory inventory1 =
-                new Inventory("Main Warehouse", product1);
+        Product product2 = new Product(102, "Mouse", 10, 800.0);
 
-        Inventory inventory2 =
-                new Inventory("Storage Warehouse", product2);
+        // Create inventory objects
+        Inventory inventory1 = new Inventory("Main Warehouse", product1);
 
+        Inventory inventory2 = new Inventory("Storage Warehouse", product2);
+
+        // Display first product
         System.out.println("\n---------- Product 1 ----------");
         inventory1.displayInventory();
 
+        // Display second product
         System.out.println("\n---------- Product 2 ----------");
         inventory2.displayInventory();
 
+        // Update first product quantity
         product1.setQuantity(3);
 
+        // Display updated product
         System.out.println("\n---------- Updated Product 1 ----------");
         inventory1.displayInventory();
     }
 }
-

@@ -51,5 +51,3 @@ public class InventoryWeek02 {
         sc.close();
     }
 }
-    
-

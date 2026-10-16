@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -10,7 +9,7 @@ class InventoryItem {
     double price;
 
     InventoryItem(int productId, String productName,
-                  int quantity, int reorderLevel, double price) {
+            int quantity, int reorderLevel, double price) {
         this.productId = productId;
         this.productName = productName;
         this.quantity = quantity;
@@ -60,15 +59,14 @@ public class InventoryWeek11 {
             double price = Double.parseDouble(sc.nextLine());
 
             if (id <= 0 || quantity < 0 ||
-                reorderLevel < 0 || price < 0) {
+                    reorderLevel < 0 || price < 0) {
                 System.out.println("Invalid details. Try again.");
                 i--;
                 continue;
             }
 
             inventory.add(
-                new InventoryItem(id, name, quantity, reorderLevel, price)
-            );
+                    new InventoryItem(id, name, quantity, reorderLevel, price));
         }
 
         System.out.println("\n===== INVENTORY REPORT =====");
