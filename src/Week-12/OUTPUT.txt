@@ -1,0 +1,38 @@
+Enter number of products: 3
+
+Product 1
+Product ID: 101
+Product Name: Laptop
+Quantity: 5
+Reorder Level: 10
+Price: 50000
+
+Product 2
+Product ID: 102
+Product Name: Mouse 
+Quantity: 25
+Reorder Level: 5
+Price: 500
+
+Product 3
+Product ID: 103
+Product Name: Keyboard
+Quantity: 3
+Reorder Level: 5
+Price: 1500
+
+===== INVENTORY DATA PIPELINE =====
+
+Products Requiring Reorder:
+Laptop - Quantity: 5
+Keyboard - Quantity: 3
+
+Total Inventory Value: Rs. 267000.00
+
+Products Sorted by Quantity:
+Keyboard - Quantity: 3
+Laptop - Quantity: 5
+Mouse  - Quantity: 25
+
+Total Products: 3
+Products Requiring Reorder: 2
